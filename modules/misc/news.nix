@@ -821,6 +821,13 @@ in
           A new module is available: 'programs.alot'.
         '';
       }
+
+      {
+        time = "2018-10-10T21:10:26+00:00";
+        message = ''
+          A new module is available: 'programs.neomutt'.
+        '';
+      }
     ];
   };
 }
