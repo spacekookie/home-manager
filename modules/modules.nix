@@ -17,6 +17,7 @@ let
     ./files.nix
     ./home-environment.nix
     ./manual.nix
+    ./misc/dconf.nix
     ./misc/fontconfig.nix
     ./misc/gtk.nix
     ./misc/lib.nix
