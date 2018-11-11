@@ -10,7 +10,6 @@ with lib;
 let
 
   hostPlatform = pkgs.stdenv.hostPlatform;
-
   checkPlatform = any (meta.platformMatch pkgs.stdenv.hostPlatform);
 
   loadModule = file: { condition ? true }: {
@@ -59,6 +58,7 @@ let
     (loadModule ./programs/irssi.nix { })
     (loadModule ./programs/jq.nix { })
     (loadModule ./programs/keychain.nix { })
+    (loadModule ./programs/kitty.nix { })
     (loadModule ./programs/lesspipe.nix { })
     (loadModule ./programs/lsd.nix { })
     (loadModule ./programs/man.nix { })
